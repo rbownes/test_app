@@ -1,0 +1,92 @@
+[
+    {
+        "Answer": [
+            10,
+            9,
+            10
+        ],
+        "Question": [
+            "7 + 3 = __",
+            "8 + 1 = __",
+            "7 + 3 = __"
+        ],
+        "Type": [
+            "Addition",
+            "Addition",
+            "Addition"
+        ],
+        "Correct": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "Answer": [
+            5
+        ],
+        "Question": [
+            "8 - 3 = __"
+        ],
+        "Type": [
+            "Subtraction"
+        ],
+        "Correct": [
+            0
+        ]
+    },
+    {
+        "Answer": [
+            30,
+            28
+        ],
+        "Question": [
+            "10 * 3 = __",
+            "7 * 4 = __"
+        ],
+        "Type": [
+            "Multiplication",
+            "Multiplication"
+        ],
+        "Correct": [
+            0,
+            0
+        ]
+    },
+    {
+        "Answer": [
+            2.5,
+            2.0,
+            1.6
+        ],
+        "Question": [
+            "10 / 4 = __",
+            "6 / 3 = __",
+            "8 / 5 = __"
+        ],
+        "Type": [
+            "Division",
+            "Division",
+            "Division"
+        ],
+        "Correct": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "Answer": [
+            "/"
+        ],
+        "Question": [
+            "8 __ 1 = 8.0"
+        ],
+        "Type": [
+            "Operator"
+        ],
+        "Correct": [
+            0
+        ]
+    }
+]
