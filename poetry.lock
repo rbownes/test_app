@@ -905,7 +905,7 @@ version = "0.2.5"
 [metadata]
 content-hash = "2cfc1101b7112adcc11a0dd9fd4983c7c5fb95b959ccf37d1039e77a0101ea6a"
 lock-version = "1.1"
-python-versions = "^3.8"
+python-versions = "3.8.5"
 
 [metadata.files]
 altair = [
