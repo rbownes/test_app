@@ -4,9 +4,14 @@ from reportlab.lib.colors import blue
 from reportlab.lib.pagesizes import LETTER
 from reportlab.lib.units import inch
 from reportlab.pdfgen.canvas import Canvas
-from operations.operations import add_problem, subtract_problem, multiply_problem, divide_problem
+from operations.operations import (
+    add_problem,
+    subtract_problem,
+    multiply_problem,
+    divide_problem,
+)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     problem1 = add_problem()
     problem2 = subtract_problem()
