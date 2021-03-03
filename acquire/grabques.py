@@ -20,7 +20,7 @@ def grabQuestions(list_of_questions: list):
     }
 
     for i in range(num_ques):
-        responses = requests.get(f"http://127.0.0.1:8000/{use_case}").json()
+        responses = requests.get(f"http://0.0.0.0:8000/{use_case}").json()
 
         question_set["Answer"].append(responses[0])
         question_set["Question"].append(responses[1])
