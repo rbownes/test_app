@@ -61,7 +61,7 @@ def build_question_set(
 
     return nlist
 
-@st.cache(allow_output_mutation=True)
+
 def build_question_frame(
     qlist=[
         {
@@ -114,7 +114,7 @@ def build_question_frame(
 
         df["Correct"] = initial_scores
 
-        return df.sample(frac=1)
+        return df.shuffle(frac=1)
 
     else:
         nlist = []
@@ -132,7 +132,7 @@ def build_question_frame(
 
         df["Correct"] = initial_scores
 
-        return df.sample(frac=1)
+        return df.shuffle(frac=1)
 
 
 def evaluate_set(dfa):
