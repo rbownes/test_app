@@ -1,0 +1,6 @@
+pandas==1.2.3
+requests==2.25.1
+streamlit==0.76.0
+reportlab==3.5.59
+numpy==1.20.1
+fastapi==0.63.0

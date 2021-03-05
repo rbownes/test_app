@@ -75,5 +75,3 @@ answer == str(Qframe.iloc[9][0])
 nlist.append(answer == str(Qframe.iloc[9][0]))
 
 Qframe["Correct"] = nlist
-
-Qframe
