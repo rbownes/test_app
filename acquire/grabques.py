@@ -114,7 +114,7 @@ def build_question_frame(
 
         df["Correct"] = initial_scores
 
-        return df
+        return df.shuffle(frac=1)
 
     else:
         nlist = []
@@ -132,7 +132,7 @@ def build_question_frame(
 
         df["Correct"] = initial_scores
 
-        return df
+        return df.shuffle(frac=1)
 
 
 def evaluate_set(dfa):

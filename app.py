@@ -8,7 +8,7 @@ from acquire.grabques import *
 
 st.write(
     """
-# My First App
+# Math Quiz App
 """
 )
 
