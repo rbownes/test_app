@@ -18,7 +18,7 @@ Qframe = build_question_frame()
 nlist = []
 
 if st.button("Evaluate"):
-    q_set, num_right = evaluate_set(Qframe)
+    q_set, num_right = evaluate_set(output_frame)
     seed = random.randint(1, 100000)
     # st.write("""
     #    """f"You got {num_right.loc['Addition'][0]} Additions problems correct."""" 
@@ -87,6 +87,4 @@ answer == str(Qframe.iloc[9][0])
 nlist.append(answer == str(Qframe.iloc[9][0]))
 
 Qframe["Correct"] = nlist
-
-Qframe
-
+output_frame = Qframe
