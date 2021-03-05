@@ -61,7 +61,7 @@ def build_question_set(
 
     return nlist
 
-
+@st.cache(allow_output_mutation=True)
 def build_question_frame(
     qlist=[
         {
