@@ -61,7 +61,6 @@ def build_question_set(
 
     return nlist
 
-
 def build_question_frame(
     qlist=[
         {
@@ -114,7 +113,7 @@ def build_question_frame(
 
         df["Correct"] = initial_scores
 
-        return df.shuffle(frac=1)
+        return df
 
     else:
         nlist = []
@@ -132,10 +131,15 @@ def build_question_frame(
 
         df["Correct"] = initial_scores
 
-        return df.shuffle(frac=1)
+        return df
 
 
 def evaluate_set(dfa):
+    all_equal = dfa.groupby(["Type"]).mean().sort_values("Correct").sum()
+    num_right = dfa.groupby(["Type"]).sum().sort_values("Correct")
     ords = list(dfa.groupby(["Type"]).mean().sort_values("Correct").index)
 
-    return {ords[0]: 3, ords[1]: 3, ords[2]: 2, ords[3]: 1, ords[4]: 1}
+    if all_equal[0] == 5:
+        return {ords[0]: 2, ords[1]: 2, ords[2]: 2, ords[3]: 2, ords[4]: 2}, num_right
+    else:
+        return {ords[0]: 3, ords[1]: 3, ords[2]: 2, ords[3]: 1, ords[4]: 1}, num_right

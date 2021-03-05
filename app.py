@@ -9,7 +9,7 @@ from acquire.grabques import *
 st.write(
     """
 # Math Quiz App
-"""
+    """
 )
 
 Qlist = build_question_set()
@@ -18,8 +18,20 @@ Qframe = build_question_frame()
 nlist = []
 
 if st.button("Evaluate"):
-    q_set = evaluate_set(Qframe)
+    q_set, num_right = evaluate_set(Qframe)
     seed = random.randint(1, 100000)
+    # st.write("""
+    #    """f"You got {num_right.loc['Addition'][0]} Additions problems correct."""" 
+
+    #    """f"You got {num_right.loc['Subtraction'][0]} Subtraction problems correct.""""
+
+    #    """f"You got {num_right.loc['Multiplication'][0]} Multiplication problems correct.""""
+
+    #    """f"You got {num_right.loc['Division'][0]} Division problems correct.""""
+
+    #    """f"You got {num_right.loc['Operator'][0]} Operatorion problems correct.""""
+    #    """
+    # )
     Qlist = build_question_set(q_set, seed=seed)
     Qframe = build_question_frame(Qlist)
     nlist = []
@@ -75,3 +87,6 @@ answer == str(Qframe.iloc[9][0])
 nlist.append(answer == str(Qframe.iloc[9][0]))
 
 Qframe["Correct"] = nlist
+
+Qframe
+
