@@ -19,7 +19,9 @@ def grabQuestions(list_of_questions: list):
     }
 
     for i in range(num_ques):
-        responses = requests.get(f"https://protected-everglades-79005.herokuapp.com/{use_case}").json()
+        responses = requests.get(
+            f"https://protected-everglades-79005.herokuapp.com/{use_case}"
+        ).json()
 
         question_set["Answer"].append(responses[0])
         question_set["Question"].append(responses[1])
